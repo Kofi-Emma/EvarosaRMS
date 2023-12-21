@@ -60,7 +60,7 @@ const Header = () => {
                 Log Out
               </button>
               <Link to='/POS'>
-                <button className='hidden mx-3 p-3 outline-none cursor-pointer bg-yellow-500 text-white rounded-md'>
+                <button className='hidden mx-2 py-3 px-6 outline-none cursor-pointer bg-yellow-500 text-white rounded-md'>
                   POS
                 </button>
               </Link>
@@ -69,7 +69,9 @@ const Header = () => {
             <div className='flex justify-between font-semibold gap-14 '>
               {[
                 <Link to='/sign-in' key='3'>
-                  LOG IN
+                  <button className=' py-3 px-6 outline-none cursor-pointer bg-yellow-500 text-white rounded-md'>
+                    LOG IN
+                  </button>
                 </Link>,
               ].map((item, index) => (
                 <p
